@@ -1,0 +1,142 @@
+.mainSection{
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  padding: 40px;
+  margin-top: 238px; 
+  gap:10px;
+  color: white;
+  font-size: 24px; 
+  font-family: 'Playfair Display', 'serif';
+  background-color:#201f1f;
+
+}
+
+.modalBackdrop{
+  position: fixed;
+  top: 150px;
+  left:20px;
+  width: 400px;
+  height: 350px;
+  padding: 10px;
+  background: rgba(0, 0, 0, .6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  border-radius: 8px;
+  padding-bottom: 10px;
+}
+
+
+.formSubmit {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  animation: slideInFromRight 0.5s ease-out forwards;
+}
+.formSubmit input{
+  width: 80%;
+  height: 30px;
+}
+.formSubmit button{
+  width:86%;
+  height: 40px;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+.formSubmit h1{
+  font-size: 24px;
+}
+.formSubmit p{
+  font-size: 19px;
+}
+.closeIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+
+}
+
+.formSubmit .closing{
+  animation: slideOutToRight 0.5s ease-out forwards;
+}
+.blockWith-img{
+  position: relative;
+  width: 48%;
+}
+
+.blockWith-img img{
+  width: 100%;
+  height:auto;
+  border-radius: 8px;
+   transform: translateY(-100px); 
+}
+.blockWith-p{
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.blockWith-p h1{
+font-size: 2rem;
+margin-bottom: 10px;
+padding: 0px 0px 0px 10px;
+}
+.blockWith-p p{
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.locationDiv{
+  display:flex;
+  justify-content: space-between;
+  gap:20px;
+}
+
+.locationDiv a{
+  color: white;
+  font-size: 22px;
+}
+
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutToRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainSection{
+    flex-direction: column;
+  }
+  .blockWith-img{
+width: 100%;
+transform: translateY(100px);
+  }
+  .blockWith-p{
+width: 100%;
+  }
+  .locationDiv{
+    font-size: 18px;
+  }
+}

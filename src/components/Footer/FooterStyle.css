@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  justify-content: center;
+    text-align: center;
+    padding: 10px 20px; 
+    background-color: #201f1f;
+    border-bottom: 1px solid #f6913e;
+    font-size: 0.9rem;
+    color:white;
+    font-family: wfont_24ebb8_e0f8efd23a694a1d8893678bf8adeaae,
+     wf_e0f8efd23a694a1d8893678bf, orig_fira_sans_regular;
+      }
+      
+      .footer-content {
+        text-align: center; 
+      }
+  
+  @media (max-width: 768px) {
+    .footer {
+      font-size: 0.8rem;
+    }
+  }
+  

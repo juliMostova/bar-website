@@ -1,0 +1,143 @@
+.header {
+  box-sizing: border-box;
+   background-color:#201f1f;
+  /* background-color: transparent; */
+  position:sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 15px 0;
+  transition: background-color 0.3s ease;
+  z-index: 1000; 
+  }
+  .header--scrolled {
+    background-color: #201f1f; /* Цвет фона для прокрутки */
+    transition: background-color 0.3s ease !important; /* Анимация */
+  }
+  .burgerMenuElem{
+    cursor: pointer;
+    color: white;
+  }
+.nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background: #201f1f; 
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 20px 15px;
+  }
+  
+  .nav ul{
+list-style: none;
+padding: 0;
+margin: 50px;
+
+}
+
+.nav-list-item {
+    margin: 15px 0;
+    padding: 15px;
+    text-align: center;
+}
+
+.nav-list-item a {
+    text-decoration: none;
+    color: wheat;
+    font-size: 23px;
+    transition: color 0.3s;
+    font-family: 'Playfair Display', 'serif';
+    letter-spacing: 0.5px;
+
+  
+  }
+  .navActive {
+    transform: translateX(0);
+  }
+  
+  .navNonActive {
+    transform: translateX(100%);
+  }
+
+  .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: wheat;
+  }
+  
+.logo{
+flex-grow: 1;
+display: flex;
+justify-content: center;
+position: relative;
+}
+.RightIcons{
+  position: absolute;
+  top:20px;
+  right: 20px;
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  gap: 15px;
+}
+  .HomeLogo {
+    width: 80px;
+    cursor: pointer;
+    z-index: 1100;
+    background-size: cover;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+  .callIcon img {
+    width: 50px; 
+    cursor: pointer;
+    object-fit: contain;
+    animation: pulse 1.5s infinite;
+    transition: transform 0.3s ease;
+  }
+
+  
+.callIcon img:hover {
+    transform: scale(1.2); 
+    animation: none; 
+  }
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1); 
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+ 
+
+
+  @media (max-width: 768px) {
+.nav{
+    width: 100%;
+}
+
+.logo{
+  
+    display: flex;
+    justify-content: space-between;
+    }
+
+  }

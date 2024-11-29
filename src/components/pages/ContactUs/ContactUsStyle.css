@@ -1,0 +1,83 @@
+.about-container{
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+padding: 10px;
+min-height: 100vh;
+}
+.main-title{
+    font-family: 'Playfair Display', 'serif';
+    color:white;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 30px;
+  
+}
+.reserv-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:30px;
+    width: 80%;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+.text-block{
+    flex: 1;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    font-size: 18px;
+}
+.tel{
+    text-align: center;
+   text-decoration: underline;
+}
+.text-block h2{
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+.text-block span {
+    font-style: italic;
+    font-weight: 100;
+    display: block;
+    margin-bottom: 20px;
+    color: #e6e6e6;
+  }
+  .text-block p {
+    margin: 0;
+    font-weight: 100;
+  }
+  
+  .image-block {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-block img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  @media(max-width:768px){
+    .reserv-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-block{
+align-items: center;
+margin-bottom: 20px;
+    }
+    .image-block img{
+        max-width: 120%;
+    }
+    .main-title{
+        font-size: 38px;  
+    }
+    .text-block h2{
+        font-size: 26px;
+    }
+  }
