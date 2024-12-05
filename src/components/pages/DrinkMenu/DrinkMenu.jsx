@@ -2,10 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./DrinkMenuStyle.css";
 import shotsPhoto1 from "./../../../assets/images/wine1.jpg";
 
-
-
 function DrinkMenu() {
   const [menuDrink, setMenuDrink] = useState([]);
+
 
   useEffect(() => {
     const getDrinkMenu = async () => {
@@ -16,7 +15,6 @@ function DrinkMenu() {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
-        console.log(data);
         setMenuDrink(data);
       } catch (error) {
         console.log("Error:", error);
@@ -28,6 +26,9 @@ function DrinkMenu() {
     return () => setMenuDrink([]);
   }, []);
 
+  const filterPrise = ["Wines by the Glass Sparkling", "White", "Red"];
+  const categoryWithMl = "Large Format Cocktails";
+
   return (
     <div className="drinkMenuContainer">
       <div
@@ -38,28 +39,47 @@ function DrinkMenu() {
       </div>
 
       <div className="menuDrink">
-        {
-          menuDrink.map((category,inx)=>(
-<div key={inx} className="drink-category">
-  <h3>{category.category}</h3>
-  <div className="drink-items">
-    {
-      category.items.map((item,ind)=>(
-        <div key={ind} className="item">
-<div className="item-name">{item.name}</div>
-<div className="item-description">{item.description}</div>
-{/* <div className="item-description1">{item.description1}</div>
-<div className="item-description2">{item.description2}</div> */}
-<div className="item-price">${item.price}</div>
-{/* <div className="item-price1">${item.price1}</div>
-<div className="item-price2">${item.price2}</div> */}
-        </div>
-      ))
-    }
-  </div>
-</div>
-          ))
-        }
+        {menuDrink.map((category, inx) => (
+          <div key={inx} className="drink-category">
+            <h3>{category.category}</h3>
+            <div className="drink-items">
+              {category.items.map((item, ind) => (
+                <div key={ind} className="item">
+                  <div className="item-name">{item.name}</div>
+                  <div className="item-description">
+                    {filterPrise.includes(category.category.trim()) ? (
+                      <>
+                        <div>{item.description1}</div>
+                        <div>{item.description2}</div>
+                      </>
+                    ) : (
+                      <>
+                        <div>{item.description}</div>
+                      </>
+                    )}
+                  </div>
+                  <div className="item-price">
+                    {filterPrise.includes(category.category) ? (
+                      <>
+                        <div>${item.price1}</div>
+                        <div>${item.price2}</div>
+                      </>
+                    ) : (
+                      <>
+                        <div>${item.price}</div>
+                      </>
+                    )}
+                  </div>
+                  {
+                    category.category === categoryWithMl && (
+                      <div className="item-ml">{item.ml}ml</div>
+                    )
+                  }
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

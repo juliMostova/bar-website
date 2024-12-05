@@ -307,23 +307,29 @@
             ]
         },
         {
-            "category": " Wines by the Glass Sparkling",
+            "category": "Wines by the Glass Sparkling",
             "items": [
                 {
                     "id": 42,
                     "name": "NV Brut, Blanc de Blancs, Treveri Cellars, Yakima Valley, WA, USA",
+                    "description1":"...............................",
+                    "description2":"...............................",
                     "price1": 14,
                     "price2": 56
                 },
                 {
                     "id": 43,
                     "name": "NV Brut Rosé, 'Bubbles', A to Z Wineworks, Willamette Valley, OR, USA",
+                    "description1":"...............................",
+                    "description2":"...............................",
                     "price1": 12,
                     "price2": 48
                 },
                 {
                     "id": 44,
                     "name": "NV Brut, 'Cordon Rouge', GH Mumm, Reims, Champagne, France",
+                    "description1":"...............................",
+                    "description2":"...............................",
                     "price1": 23,
                     "price2": 90
                 }
@@ -335,33 +341,33 @@
                 {
                     "id": 45,
                     "name": "2024 Sauvignon Blanc, 14 Hands, Columbia Valley, WA, USA",
-                    "description1": "........................................",
+                    "description1":"...............................",
+                    "description2":"...............................",
                     "price1": 10,
-                    "description2": "........................................",
                     "price2": 40
                 },
                 {
                     "id": 46,
                     "name": "2020 Pinot Gris, 'Horse Heaven Hills Vineyard', Nine Hats, Columbia Valley, WA, USA",
-                    "description1": "........................................",
+                    "description1":"...............................",
+                    "description2":"...............................",
                     "price1": 12,
-                    "description2": "........................................",
                     "price2": 48
                 },
                 {
                     "id": 47,
                     "name": "2021 Riesling, 'Cold Creek Vineyard', Château Ste. Michelle, Columbia Valley, WA, USA",
-                    "description1": "........................................",
+                    "description1":"...............................",
+                    "description2":"...............................",
                     "price1": 10,
-                    "description2": "........................................",
                     "price2": 40
                 },
                 {
                     "id": 48,
                     "name": "2021 Chardonnay, MERF, Columbia Valley, WA, USA",
-                    "description1": "........................................",
+                    "description1":"...............................",
+                    "description2":"...............................",
                     "price1": 14,
-                    "description2": "........................................",
                     "price2": 56
                 }
             ]
@@ -372,41 +378,41 @@
                 {
                     "id": 49,
                     "name": "2020 Pinot Noir, Argyle Winery, Willamette Valley, OR, USA",
-                    "description1": "........................................",
+                    "description1":"...............................",
+                    "description2":"...............................",
                     "price1": 16,
-                    "description2": "........................................",
                     "price2": 64
                 },
                 {
                     "id": 50,
                     "name": "2020 Merlot, 'Expedition', Canoe Ridge Vineyards, Walla Walla, WA, USA",
-                    "description1": "........................................",
+                    "description1":"...............................",
+                    "description2":"...............................",
                     "price1": 10,
-                    "description2": "........................................",
                     "price2": 40
                 },
                 {
                     "id": 51,
                     "name": "2020 Syrah, 'The Pundit', Tenet Wines, Yakima Valley, WA, USA",
-                    "description1": "........................................",
+                    "description1":"...............................",
+                    "description2":"...............................",
                     "price1": 13,
-                    "description2": "........................................",
                     "price2": 52
                 },
                 {
                     "id": 52,
                     "name": "2020 Red Blend, Intrinsic Collection, CSM, Columbia Valley, WA, USA",
-                    "description1": "........................................",
+                    "description1":"...............................",
+                    "description2":"...............................",
                     "price1": 16,
-                    "description2": "........................................",
                     "price2": 64
                 },
                 {
                     "id": 53,
                     "name": "2020 Cabernet Sauvignon, 'Boomtown', Dusted Valley, Columbia Valley, WA, USA",
-                    "description1": "........................................",
+                    "description1":"...............................",
+                    "description2":"...............................",
                     "price1": 12,
-                    "description2": "........................................",
                     "price2": 48
                 }
             ]
@@ -466,6 +472,65 @@
                 }
             ]
         }
+    ],
+    "menuEvents":[
+        {
+          "category":"Events",
+          "items":[
+        {
+            "id":63,
+            "img":"/ImageEvents/1.jpg",
+            "name":"Pranks",
+            "description":"A discount for guests who made a check for the holiday sum (for example, 500 UAH or more).Participation in the drawing of beer kegs for a check for $1000",
+            "time":"00pm-00pm",
+            "day":"00.00.00"
+        },
+        {
+            "id":64,
+            "img":"/ImageEvents/3.webp",
+            "name":"Happy Hours",
+            "description":"Beer is 20% off.",
+            "time":"20pm-22pm",
+            "day":"18.10.25"
+        },
+        {
+            "id":65,
+            "img":"/ImageEvents/5.webp",
+            "name":"Combo set",
+            "description":"Create combo sets with beer and snacks at a special price.Butt:'Bavarian Evening': Pint of beer + sausages + pretzel for a fixed price.",
+            "time":"00pm-00pm",
+            "day":"00.00.00"
+        },
+        {
+            "id":66,
+            "img":"/ImageEvents/4.webp",
+            "name":"Beer Day",
+            "description":"On Thursdays there is a 30% discount on IPA.Wine of dance beer for half the price.",
+            "time":"00pm-00pm",
+            "day":"00.00.00"
+        }  
+          ]
+        }
+    ],
+    "headSectionMenu":[
+       {
+        "category":"Tittle",
+        "items":[
+           {
+            "id":67,
+            "name":"Unveiling Seattle’s Vibrant Spirit",
+            "description":["We are Champaign’s premier restaurant and bar, where flavor, connection, and culture come together.",
+    "Located in the heart of the city, NOMAD is more than a dining destination—it’s a hub for unique experiences and unforgettable moments.",
+    "Savor our signature wings, gourmet burgers, and vibrant tacos, all crafted to perfection.",
+    "From lively Latin nights to exclusive events, we create an atmosphere where everyone feels welcome, energized, and inspired.",
+    "At NOMAD Lounge, elegance meets excellence, and every visit is a journey to something extraordinary.",
+    "Join us to celebrate, connect, and experience the best Champaign has to offer."],
+          "workDay":"Wednesday - Sunday",
+          "workDayTime":"4-11 pm",
+          "happyHourDay":"Wednesday-Thursday",
+          "happyHourTime":"4-6 pm"     
+        }
+        ]
+       }
     ]
 }
-

@@ -3,7 +3,7 @@
   justify-content: space-between; 
   align-items: center;
   padding: 40px;
-  margin-top: 238px; 
+  margin-top: 238px;  
   gap:10px;
   color: white;
   font-size: 24px; 
@@ -102,14 +102,13 @@ padding: 0px 0px 0px 10px;
   font-size: 22px;
 }
 
-
-@keyframes slideInFromRight {
+@keyframes slideInFromRight  {
   from {
-    transform: translateX(100%);
+   transform: translateX(100%);
     opacity: 0;
   }
   to {
-    transform: translateX(0);
+    transform: translateX(0); 
     opacity: 1;
   }
 }

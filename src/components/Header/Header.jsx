@@ -45,7 +45,7 @@ const handleCloseModal = ()=>{
   setIsModalOpen(false)
 }
   return (
-    <header  ref={ref} className={isScrolled ?"header--scrolled":"header"}>
+    <header ref={ref} className={isScrolled ?"header header--scrolled":"header"}>
   
       <div className="logo">
         <img className="HomeLogo" src={Logo} alt="photo" onClick={logoClick} />
@@ -81,10 +81,6 @@ const handleCloseModal = ()=>{
                <li className="nav-list-item">
                 <Link to="/">Home</Link>
               </li> 
-              {/* <li className="nav-list-item">
-                <Link to="/about">About</Link>
-              </li> */}
-
               <li className="nav-list-item">
                 <Link to="/food-menu">Food menu</Link>
               </li>

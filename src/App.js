@@ -5,7 +5,6 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import MainContent from "./components/MainContent/MainContent";
-import About from "./components/pages/AboutUs/About";
 import FoodMenu from "./components/pages/FoodMenu/FoodMenu";
 import DrinkMenu from "./components/pages/DrinkMenu/DrinkMenu";
 import Events from "./components/pages/EventsEl/Events";
@@ -17,15 +16,14 @@ function App() {
   const headerRef = useRef(null);
 
   useEffect(() => {
+    console.log("Adding scroll listener"); 
     const handleScroll = () => {
-      if (
-        headerRef.current &&
-        window.scrollY > headerRef.current.clientHeight
-      ) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      console.log("Scroll event triggered"); // Це має відобразитися при прокрутці
+      if (headerRef.current) {
+        const scrolled = window.scrollY > 0;
+        console.log("Scrolled:", scrolled);
+        setIsScrolled(scrolled);
+      } 
     };
     window.addEventListener("scroll", handleScroll);
 
@@ -36,14 +34,14 @@ function App() {
      const timerId = setTimeout(()=>{
       console.log("Setting isModal to true");
 setIsModal(true);
-     },5 *60 *1000)
+     },4 *60 *1000);
     return ()=> clearTimeout(timerId)
   },[]);
 
   return (
     <div className="app">
       <Header isScrolled={isScrolled} ref={headerRef} />
-      <main className="main">
+      <main className="main">  
         <Routes>
           <Route
             path="/"

@@ -5,3 +5,7 @@ font-size: 20px;
 .location a{
     font-size: 20px;
 }
+.location{
+    display: flex;
+    flex-direction: column;
+}
