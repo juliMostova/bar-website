@@ -8,7 +8,7 @@ min-height: 100vh;
 }
 .main-title{
     font-family: 'Playfair Display', 'serif';
-    color:white;
+    color:#FFFFF0;
     font-size: 48px;
     text-align: center;
     margin-bottom: 30px;
@@ -25,7 +25,7 @@ min-height: 100vh;
 }
 .text-block{
     flex: 1;
-    color: white;
+    color:#FFFFF0;
     font-family: 'Arial', sans-serif;
     line-height: 1.8;
     font-size: 18px;
@@ -68,8 +68,8 @@ min-height: 100vh;
         align-items: center;
     }
     .text-block{
-align-items: center;
-margin-bottom: 20px;
+   align-items: center;
+    margin-bottom: 20px;
     }
     .image-block img{
         max-width: 120%;

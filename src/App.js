@@ -30,13 +30,14 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(()=>{
-     const timerId = setTimeout(()=>{
-      console.log("Setting isModal to true");
-setIsModal(true);
-     },4 *60 *1000);
-    return ()=> clearTimeout(timerId)
-  },[]);
+//   useEffect(()=>{
+//      const timerId = setTimeout(()=>{
+//       console.log("Setting isModal to true");
+// setIsModal(true);
+//      },4 *60 *1000); 
+//     return ()=> clearTimeout(timerId)
+//   },[]);
+
 
   return (
     <div className="app">

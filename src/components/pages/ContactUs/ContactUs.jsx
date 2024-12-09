@@ -15,7 +15,7 @@ function ContactUs() {
         <div className="text-block">
           <h2>Reservations Required for large parties</h2>
           <span><i>*if your party is 8 people or more, please call us</i></span>
-          <div className="tel">(206) 957-1000</div>
+          <div className="tel">(217) 800-1094</div>
           <p>
             <i>
             For semi-private and full buyouts, please visit our Private Events

@@ -4,6 +4,7 @@ import { IoIosCloseCircleOutline } from "react-icons/io";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 
+
 import Location from "./../Location/Location";
 import HoursWork from "./../HoursWork/HoursWork";
 import blockImg2 from "./../../assets/images/1.jpg";

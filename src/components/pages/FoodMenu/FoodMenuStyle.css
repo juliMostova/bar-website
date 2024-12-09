@@ -21,7 +21,7 @@
     margin: 0;
 }
 .menuTitle {
-    color: white;
+    color:#FFFFF0;
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
     font-weight: 100;
@@ -29,8 +29,9 @@
   }
 
   .menuContent{
-    color: white;
-    background-color: #201f1f;
+    color: #FFFFF0;
+    /* background-color: #201f1f; */
+    background-color: black;
     width: 100%;
     height: auto;
     padding: 20px;
@@ -43,7 +44,7 @@
     display: inline-block;
     padding-bottom: 5px;
     text-transform: uppercase;
-    color: #fff;
+    color:#FFFFF0;
   
 }
 

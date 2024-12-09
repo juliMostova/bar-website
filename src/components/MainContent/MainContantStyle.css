@@ -5,10 +5,11 @@
   padding: 40px;
   margin-top: 238px;  
   gap:10px;
-  color: white;
+  color:#FFFFF0; 
   font-size: 24px; 
   font-family: 'Playfair Display', 'serif';
-  background-color:#201f1f;
+  /* background-color:#201f1f; */
+  background-color: black;
 
 }
 
@@ -88,7 +89,7 @@ padding: 0px 0px 0px 10px;
 .blockWith-p p{
   font-size: 1.2rem;
   line-height: 1.6;
-  color: #fff;
+  color:#FFFFF0;
 }
 
 .locationDiv{
@@ -98,7 +99,7 @@ padding: 0px 0px 0px 10px;
 }
 
 .locationDiv a{
-  color: white;
+  color:#FFFFF0;
   font-size: 22px;
 }
 

@@ -491,23 +491,23 @@
             "name":"Happy Hours",
             "description":"Beer is 20% off.",
             "time":"20pm-22pm",
-            "day":"18.10.25"
+            "day":"08.10.25"
         },
         {
             "id":65,
             "img":"/ImageEvents/5.webp",
             "name":"Combo set",
             "description":"Create combo sets with beer and snacks at a special price.Butt:'Bavarian Evening': Pint of beer + sausages + pretzel for a fixed price.",
-            "time":"00pm-00pm",
-            "day":"00.00.00"
+            "time":"10pm-11pm",
+            "day":"10.10.10"
         },
         {
             "id":66,
             "img":"/ImageEvents/4.webp",
             "name":"Beer Day",
             "description":"On Thursdays there is a 30% discount on IPA.Wine of dance beer for half the price.",
-            "time":"00pm-00pm",
-            "day":"00.00.00"
+            "time":"10pm-20pm",
+            "day":"10.10.10"
         }  
           ]
         }

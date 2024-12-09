@@ -25,7 +25,8 @@
     right: 0;
     width: 300px;
     height: 100%;
-    background: #201f1f; 
+    /* background: #201f1f;  */
+    background-color: black;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
@@ -48,14 +49,13 @@ margin: 50px;
 
 .nav-list-item a {
     text-decoration: none;
-    color: wheat;
+    color:#FFFFF0;
     font-size: 23px;
     transition: color 0.3s;
     font-family: 'Playfair Display', 'serif';
     letter-spacing: 0.5px;
-
-  
   }
+
   .navActive {
     transform: translateX(0);
   }
@@ -72,7 +72,7 @@ margin: 50px;
     border: none;
     font-size: 24px;
     cursor: pointer;
-    color: wheat;
+    color:#FFFFF0;
   }
   
 .logo{
@@ -90,12 +90,15 @@ position: relative;
   align-items: center;
   gap: 15px;
 }
+.menu{
+  display: block;
+}
   .HomeLogo {
-    width: 80px;
+    width: 90px;
     cursor: pointer;
     z-index: 1100;
     background-size: cover;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
   }
   .callIcon img {
     width: 50px; 
@@ -126,18 +129,15 @@ position: relative;
     }
   }
   
- 
 
 
   @media (max-width: 768px) {
 .nav{
     width: 100%;
 }
-
 .logo{
-  
     display: flex;
     justify-content: space-between;
-    }
-
+  }
+    
   }
