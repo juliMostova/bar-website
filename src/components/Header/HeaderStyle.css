@@ -1,6 +1,6 @@
 .header{
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.5);
+
   position:sticky;
   top: 0;
   left: 0;
@@ -58,6 +58,8 @@ margin: 50px;
 
   .navActive {
     transform: translateX(0);
+      /* background-color: rgba(0, 0, 0, 0.5); */
+      
   }
   
   .navNonActive {

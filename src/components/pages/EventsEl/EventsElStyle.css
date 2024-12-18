@@ -1,77 +1,99 @@
-.events-content{
-position: relative;
-width: 100%;
-display: flex;
-flex-direction: column;
-color: white;
-}
-
-.events-content .eventsNo{
-    text-align: center;
-    font-size: 28px;
-}
-.events-content h1{
+.events-content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     color: white;
-    font-family: 'Playfair Display', serif;
+    align-items: center;
+  }
+  
+  .events-content h1 {
     font-size: 2.3rem;
+    font-family: 'Playfair Display', serif;
     font-weight: 100;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     text-align: center;
-}
-.imageContent{
-display: flex;
-justify-content: center;
-align-items: center;
-/* position: relative; */
-margin: 10px auto;
-}
-.arrowLeft, 
-.arrowRight{
+  }
+  
+  .imageContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 300px;
+  }
+  
+  .arrowLeft,
+  .arrowRight {
     position: absolute;
-    top:50%;
+    top: 50%;
     transform: translateY(-50%);
     font-size: 28px;
     cursor: pointer;
-}
- .arrowLeft{
+  }
+  
+  .arrowLeft {
     left: 0;
-}
-.arrowRight{
+  }
+  
+  .arrowRight {
     right: 0;
-} 
-
-.photoCard{
+  }
+  
+  .photoCard {
     width: 450px;
-    height: auto;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: #333; */
+    background-color: #333;
     border-radius: 8px;
-    padding: 10px;
+    padding: 15px;
     transition: transform 0.5s ease-in-out;
     margin: 10px;
-}
-.imageContent img{
-     width:450px;
-    height:250px; 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
+  }
+  
+  .imageContent img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 8px;
-}
-.name{
-    font-size: 23px;
-}
-
-.photoCard span:not(:first-of-type){
-text-decoration: underline;
-}
-@media (max-width:768px) {
-    .photoCard{
-        width: 350px;
-    }
-    .imageContent img{
+  }
+  
+  .name {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .photoCard p {
+    font-size: 16px;
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+  .photoCard span {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: underline;
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .photoCard {
       width: 350px;
     }
-}
+  
+    .imageContent img {
+      width: 350px;
+    }
+  
+    .name, .photoCard p, .photoCard span {
+      font-size: 14px;
+    }
+  }

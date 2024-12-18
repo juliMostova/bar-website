@@ -99,7 +99,7 @@ function MainContent({ isModal, setIsModal }) {
       <div className="blockWith-p">
         {data.map((category) =>
           category.items.map(({ id }, inx) => {
-            const description = t(`${id}.description`, { ns: "items" });
+            const description = t(`${id}.description`, { ns: "items", returnObjects: true });
             return (
               <div key={inx}>
                 <h1>{t(`${id}.name`, { ns: "items" })}</h1>

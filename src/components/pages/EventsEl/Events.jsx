@@ -5,10 +5,11 @@ import { IoIosArrowRoundBack } from "react-icons/io";
 import { useTranslation } from "react-i18next";
 
 
+
 function Events() {
   const [eventsCard, setEventsCard] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   useEffect(() => {
     const getEvent = async () => {
@@ -17,12 +18,12 @@ function Events() {
         const data = await response.json();
         setEventsCard(data);
       } catch (error) {
-        console.log("Error", error);
+        console.error("Error fetching events:", error);
       }
     };
     getEvent();
 
-    return () => setEventsCard([]);
+    return () => setEventsCard([]); // clear events on component unmount
   }, []);
 
   const allEvents = eventsCard.flatMap((category) =>
@@ -31,16 +32,12 @@ function Events() {
     )
   );
 
-  const nextElem = () => {
-    setCurrentIndex((prevElem) =>
-      prevElem + 1 < allEvents.length ? prevElem + 1 : 0
-    );
+  const nextEvent = () => {
+    setCurrentIndex((prevElem) => (prevElem + 1 < allEvents.length ? prevElem + 1 : 0));
   };
 
-  const prevElem = () => {
-    setCurrentIndex((prevElem) =>
-      prevElem - 1 >= 0 ? prevElem - 1 : allEvents.length - 1
-    );
+  const prevEvent = () => {
+    setCurrentIndex((prevElem) => (prevElem - 1 >= 0 ? prevElem - 1 : allEvents.length - 1));
   };
 
   if (allEvents.length === 0) {
@@ -52,22 +49,24 @@ function Events() {
     );
   }
 
+  const currEvent = allEvents[currentIndex];
+
   return (
     <div className="events-content">
       <h1>Events</h1>
       <div className="imageContent">
-        <IoIosArrowRoundBack className="arrowLeft" onClick={prevElem} />
-        <div className="photoCard">
+        <IoIosArrowRoundBack className="arrowLeft" onClick={prevEvent} />
+        <div key={currEvent.id} className="photoCard">
           <img
-            src={allEvents[currentIndex].img}
-            alt={allEvents[currentIndex].name}
+            src={t(`${currEvent.id}.img`, { ns: "items" })}
+            alt={t(`${currEvent.id}.name`, { ns: "items" })}
           />
-          <span className="name">{allEvents[currentIndex].name}</span>
-          <p>{allEvents[currentIndex].description}</p>
-          <span>Time: {allEvents[currentIndex].time}</span>
-          <span>Day: {allEvents[currentIndex].day}</span>
+          <span className="name">{t(`${currEvent.id}.name`, { ns: "items" })}</span>
+          <p>{t(`${currEvent.id}.description`, { ns: "items" })}</p>
+          <span>Time: {t(`${currEvent.id}.time`, { ns: "items" })}</span>
+          <span>Day: {t(`${currEvent.id}.day`, { ns: "items" })}</span>
         </div>
-        <IoIosArrowRoundForward className="arrowRight" onClick={nextElem} />
+        <IoIosArrowRoundForward className="arrowRight" onClick={nextEvent} />
       </div>
     </div>
   );
@@ -76,10 +75,17 @@ function Events() {
 export default Events;
 
 
+
+
+
+
+
+
+
 // function Events() {
 //   const [eventsCard, setEventsCard] = useState([]);
 //   const [currentIndex, setCurrentIndex] = useState(0);
-//   const {t} = useTranslation();
+//   const { t } = useTranslation();
 
 //   useEffect(() => {
 //     const getEvent = async () => {
@@ -87,6 +93,7 @@ export default Events;
 //         const response = await fetch("http://localhost:3001/menuEvents");
 //         const data = await response.json();
 //         setEventsCard(data);
+//         console.log("events", data);
 //       } catch (error) {
 //         console.log("Error", error);
 //       }
@@ -102,17 +109,20 @@ export default Events;
 //     )
 //   );
 
-//   const nextElem = () => {
-//     setCurrentIndex((prevElem) =>
-//       prevElem + 1 < allEvents.length ? prevElem + 1 : 0
-//     );
+//   const nextEvent = () => {
+// setCurrentIndex((prevElem)=>
+//   prevElem +1 < allEvents.length ? prevElem +1 :0
+// )
+
 //   };
 
-//   const prevElem = () => {
-//     setCurrentIndex((prevElem) =>
-//       prevElem - 1 >= 0 ? prevElem - 1 : allEvents.length - 1
-//     );
+//   const prevEvent = () => {
+//     setCurrentIndex((prevElem)=>
+//       prevElem -1 >=0 ?prevElem-1: allEvents.length-1
+//     )
 //   };
+
+
 
 //   if (allEvents.length === 0) {
 //     return (
@@ -122,26 +132,32 @@ export default Events;
 //       </div>
 //     );
 //   }
-
+// const currEvent = allEvents[currentIndex];
 //   return (
 //     <div className="events-content">
 //       <h1>Events</h1>
 //       <div className="imageContent">
-//         <IoIosArrowRoundBack className="arrowLeft" onClick={prevElem} />
-//         <div className="photoCard">
-//           <img
-//             src={allEvents[currentIndex].img}
-//             alt={allEvents[currentIndex].name}
-//           />
-//           <span className="name">{allEvents[currentIndex].name}</span>
-//           <p>{allEvents[currentIndex].description}</p>
-//           <span>Time: {allEvents[currentIndex].time}</span>
-//           <span>Day: {allEvents[currentIndex].day}</span>
-//         </div>
-//         <IoIosArrowRoundForward className="arrowRight" onClick={nextElem} />
+//         <IoIosArrowRoundBack className="arrowLeft" onClick={prevEvent} />
+      
+//           <div key={currEvent.id} className="photoCard">
+//             <img
+//               src={t(`${currEvent.id}.img`, { ns: "items" })}
+//               alt={t(`${currEvent.id}.name`, { ns: "items" })}
+//             />
+//             <span className="name">{t(`${currEvent.id}.name`, { ns: "items" })}</span>
+//             <p>{t(`${currEvent.id}.description`, { ns: "items" })}</p>
+//             <span>Time: {t(`${currEvent.id}.time`, { ns: "items" })}</span>
+//             <span>Day: {t(`${currEvent.id}.day`, { ns: "items" })}</span>
+//           </div>
+       
+
+//         <IoIosArrowRoundForward className="arrowRight" onClick={nextEvent} />
 //       </div>
 //     </div>
 //   );
 // }
 
 // export default Events;
+
+
+

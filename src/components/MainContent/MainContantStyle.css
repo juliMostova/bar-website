@@ -20,7 +20,7 @@
   width: 400px;
   height: 350px;
   padding: 10px;
-  background: rgba(0, 0, 0, .6);
+   background: rgba(0, 0, 0, .6); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,7 +73,7 @@
   width: 100%;
   height:auto;
   border-radius: 8px;
-   transform: translateY(-100px); 
+   transform: translateY(-270px); 
 }
 .blockWith-p{
   width: 48%;
