@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./DrinkMenuStyle.css";
 import shotsPhoto1 from "./../../../assets/images/wine1.jpg";
+import { useTranslation } from "react-i18next";
 
 function DrinkMenu() {
   const [menuDrink, setMenuDrink] = useState([]);
-
+  const { t } = useTranslation();
 
   useEffect(() => {
     const getDrinkMenu = async () => {
@@ -39,42 +40,63 @@ function DrinkMenu() {
       </div>
 
       <div className="menuDrink">
-        {menuDrink.map((category, inx) => (
+        {menuDrink.map(({ category, items }, inx) => (
           <div key={inx} className="drink-category">
-            <h3>{category.category}</h3>
+            <h3>{t(category, { ns: "categories" })}</h3>
             <div className="drink-items">
-              {category.items.map((item, ind) => (
+              {items.map(({ id }, ind) => (
                 <div key={ind} className="item">
-                  <div className="item-name">{item.name}</div>
+                  <div className="item-name">
+                    {t(`${id}.name`, { ns: "items" })}
+                  </div>
                   <div className="item-description">
-                    {filterPrise.includes(category.category.trim()) ? (
+                    {filterPrise.includes(category.trim()) ? (
                       <>
-                        <div>{item.description1}</div>
-                        <div>{item.description2}</div>
+                        {t(`${id}.description1`, { ns: "items" }) &&
+                          t(`${id}.description1`, { ns: "items" }) !==
+                            `${id}.description1` && (
+                            <div>
+                              {t(`${id}.description1`, { ns: "items" })}
+                            </div>
+                          )}
+                        {t(`${id}.description2`, { ns: "items" }) &&
+                          t(`${id}.description2`, { ns: "items" }) !==
+                            `${id}.description2` && (
+                            <div>
+                              {t(`${id}.description2`, { ns: "items" })}
+                            </div>
+                          )}
                       </>
                     ) : (
                       <>
-                        <div>{item.description}</div>
+                        {t(`${id}.description`, {
+                          ns: "items",
+                          defaultValue: "",
+                        }) &&
+                          t(`${id}.description`, { ns: "items" }) !==
+                            `${id}.description` && (
+                            <div>{t(`${id}.description`, { ns: "items" })}</div>
+                          )}
                       </>
                     )}
                   </div>
                   <div className="item-price">
-                    {filterPrise.includes(category.category) ? (
+                    {filterPrise.includes(category.trim()) ? (
                       <>
-                        <div>${item.price1}</div>
-                        <div>${item.price2}</div>
+                        <div>${t(`${id}.price1`, { ns: "items" })}</div>
+                        <div>${t(`${id}.price2`, { ns: "items" })}</div>
                       </>
                     ) : (
                       <>
-                        <div>${item.price}</div>
+                        <div>${t(`${id}.price`, { ns: "items" })}</div>
                       </>
                     )}
                   </div>
-                  {
-                    category.category === categoryWithMl && (
-                      <div className="item-ml">{item.ml}ml</div>
-                    )
-                  }
+                  {category.category === categoryWithMl && (
+                    <div className="item-ml">
+                      {t(`${id}.ml`, { ns: "items" })}ml
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

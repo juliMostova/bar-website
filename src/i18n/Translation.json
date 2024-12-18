@@ -1,0 +1,793 @@
+{
+    "en": {
+        "categories": {
+            "Snacks": "Snacks",
+            "Small Plates": "Small Plates",
+            "Large Plates": "Large Plates",
+            "Aperitivo": "Aperitivo",
+            "Vodka & Gin": "Vodka & Gin",
+            "Agave & Rum": "Agave & Rum",
+            "Whiskey & Brandy": "Whiskey & Brandy",
+            "Reserve Cocktails": "Reserve Cocktails",
+            "Large Format Cocktails": "Large Format Cocktails",
+            "Free Spirited": "Free Spirited",
+            "Beer": "Beer",
+            "Wines by the Glass Sparkling": "Wines by the Glass Sparkling",
+            "White": "White",
+            "Red": "Red",
+            "Sherry": "Sherry",
+            "Vermouth and Fortified": "Vermouth and Fortified",
+            "Events": "Events",
+            "Tittle": "Tittle"
+        },
+        "items": {
+            "1": {
+                "name": "Mixed Nuts",
+                "description": "rosemary, garlic, citrus",
+                "price": 11
+            },
+            "2": {
+                "name": "Mixed Olives",
+                "description": "mixed nut blend",
+                "price": 12
+            },
+            "3": {
+                "name": "Truffle Fries",
+                "description": "fine herbs, black truffle oil",
+                "price": 17
+            },
+            "4": {
+                "name": "Lamb Meatballs",
+                "description": "tzatziki, chili oil, herb salad",
+                "price": 16
+            },
+            "5": {
+                "name": "Washington State Cheese Board",
+                "description": "dried cherries, apple compote, crackers",
+                "price": 19
+            },
+            "6": {
+                "name": "Charcuterie Board",
+                "description": "house selections, croistini, marcona almonds",
+                "price": 19
+            },
+            "7": {
+                "name": "Fig & Prosciutto",
+                "description": "marscapone, local honey",
+                "price": 16
+            },
+            "8": {
+                "name": "Thai Chicken Wings",
+                "description": "rosemary, garlic, citrus",
+                "price": 18
+            },
+            "9": {
+                "name": "Roasted Carrot Hummus",
+                "description": "warm pita, roasted tomato, marinated cucumber",
+                "price": 17
+            },
+            "10": {
+                "name": "House Classic Caesar Salad",
+                "description": "hearts of romaine, herb croutons, shaved parmesan, traditional caesar dressing",
+                "price": 17
+            },
+            "11": {
+                "name": "Steakhouse Burger",
+                "description": "lettuce, cheddar,house special sauce, brioche bun served with beer battered onion rings",
+                "price": 25
+            },
+            "12": {
+                "name": "IPA Beer Battered Halibut & Chips",
+                "description": "french fries, tartar sauce",
+                "price": 34
+            },
+            "13": {
+                "name": "Fish Tacos",
+                "description": "grilled rock fish, flour tortilla, chipotle mayo, mango slaw, pickled red onion",
+                "price": 28
+            },
+            "14": {
+                "name": "Rosebay Spritz",
+                "description": "Cappelletti Aperitivo, Bonal, Cocchi Americano, sparkling wine, grapefruit bitters. Served over ice in a wine glass, garnished with grapefruit.",
+                "price": 12
+            },
+            "15": {
+                "name": "Party Dress",
+                "description": "Cap Corse Blanc, Singani 63, grapefruit, yuzu bitters, club soda. Served tall with thyme & lemon",
+                "price": 13
+            },
+            "16": {
+                "name": "Stolen Season",
+                "description": "Amontillado Sherry, Cynar, Cocchi Americano, Seville orange bitters. Served up with a lemon twist",
+                "price": 13
+            },
+            "17": {
+                "name": "Skip a Beat",
+                "description": "Gin, Aquavit, Amaricano Bianca, honey, lemon, lavender bitters. Served up with a grapefruit twist",
+                "price": 15
+            },
+            "18": {
+                "name": "Wanderlust",
+                "description": "Vodka, Cocchi Americano, blueberry, lemon. Served on the rocks with blueberries & thyme",
+                "price": 16
+            },
+            "19": {
+                "name": "Sine Wave",
+                "description": "Gin, Fino Sherry, Cap Corse Blanc, Casoni Heritage, celery bitters. Served up with an olive",
+                "price": 16
+            },
+            "20": {
+                "name": "Cuarto Verde",
+                "description": "Mezcal, Dolin Génépy le Chamois, lemon. Served on the rocks with mint",
+                "price": 17
+            },
+            "21": {
+                "name": "Push It",
+                "description": "Mezcal, Tequila, Amaro Lucano, firewater tincture, demerara syrup. Served on a large rock with lemon & orange twists",
+                "price": 17
+            },
+            "22": {
+                "name": "Beach Blanket Bingo",
+                "description": "Plantation Pineapple Rum, Meletti 1870, lime, honey. Served on the rocks with grapefruit & mint",
+                "price": 15
+            },
+            "23": {
+                "name": "Out of Luck",
+                "description": "Bourbon, Amaricano, lemon, orange cordial. Served on the rocks with a lemon wheel",
+                "price": 16
+            },
+            "24": {
+                "name": "Black Tie Affair",
+                "description": "Cognac, Génépy le Chamois, lemon, orange cordial, sparkling wine. Served up with a lemon twist",
+                "price": 21
+            },
+            "25": {
+                "name": "Private Eyes",
+                "description": "Rye, Amaro Amorino, Ramazzotti, sweet vermouth, grapefruit bitters. Served up with a grapefruit twist",
+                "price": 17
+            },
+            "26": {
+                "name": "After Hours",
+                "description": "Blended & Peated Scotches, Salers, Meletti, black lemon bitters. Served on a large rock with a cherry",
+                "price": 19
+            },
+            "27": {
+                "name": "Reserve Bijou",
+                "description": "Monkey 47 Gin, Green Chartreuse, Cocchi Dopo Teatro, Seville orange bitters. Served up with a flamed orange twist & a cherry",
+                "price": 32
+            },
+            "28": {
+                "name": "Reserve Old Fashioned",
+                "description": "WhistlePig 12 Year Rye, Amaro Amorino Riserva, aromatic bitters, demerara syrup. Served on a large rock with an orange twist & a cherry",
+                "price": 47
+            },
+            "29": {
+                "name": "Fancy Footwork",
+                "description": "Gin, Cap Corse Blanc, Avèze, yuzu bitters. Served in rocks glasses with ice, garnished with lemon twists & olives",
+                "price": 215,
+                "ml": 750
+            },
+            "30": {
+                "name": "Summer & Smoke",
+                "description": "Mezcal, Tequila, Cocchi Rosa, verjus, Dolin Génépy le Chamois, grapefruit bitters. Served in rocks glasses with ice, garnished with grapefruit",
+                "price": 225,
+                "ml": 750
+            },
+            "31": {
+                "name": "Dr. Manhattan",
+                "description": "Bourbon, Amaro Lucano, Bonal, orange bitters. Served with chilled glasses, garnished with lemon twists",
+                "price": 255,
+                "ml": 750
+            },
+            "32": {
+                "name": "Keep Flying",
+                "description": "Wilderton Aperitivo, verjus, orange cordial, club soda. Served over ice in a wine glass",
+                "price": 13
+            },
+            "33": {
+                "name": "Time To Swim",
+                "description": "Wilderton Lustre, grapefruit, lemon, honey, club soda. Served tall with grapefruit & mint",
+                "price": 13
+            },
+            "34": {
+                "name": "All Nighter",
+                "description": "Wilderton Aperitivo, Wilderton Lustre, Pathfinder. Served on a large rock with orange",
+                "price": 14
+            },
+            "35": {
+                "name": "Rainier Lager Tallboy, WA",
+                "description": "Can (16oz)",
+                "price": 8
+            },
+            "36": {
+                "name": "Pike Brewing 'Post Alley' Pils, Seattle, WA",
+                "description": "",
+                "price": 7
+            },
+            "37": {
+                "name": "Aslan Brewing 'Monarch' West Coast IPA, Bellingham, WA",
+                "description": "",
+                "price": 7
+            },
+            "38": {
+                "name": "Bale Breaker Brewing 'Hazy L' Hazy IPA, Yakima, WA",
+                "description": "",
+                "price": 7
+            },
+            "39": {
+                "name": "Ghostfish Brewing 'Vanishing Point' Pale Ale, Seattle WA",
+                "description": "",
+                "price": 8
+            },
+            "40": {
+                "name": "Rotating Local Seasonal",
+                "description": "Can (16oz)",
+                "price": 8
+            },
+            "41": {
+                "name": "Ask about Our Rotating Seasonal Draft Beers",
+                "description": "",
+                "price": 8
+            },
+            "42": {
+                "name": "NV Brut, Blanc de Blancs, Treveri Cellars, Yakima Valley, WA, USA",
+                "description1": "...............................",
+                "description2": "...............................",
+                "price1": 14,
+                "price2": 56
+             
+            },
+            "43": {
+                "name": "NV Brut Rosé, 'Bubbles', A to Z Wineworks, Willamette Valley, OR, USA",
+                "description1": "...............................",
+                "description2": "...............................",
+                "price1": 12,
+                "price2": 48
+            },
+            "44": {
+                "name": "NV Brut, 'Cordon Rouge', GH Mumm, Reims, Champagne, France",
+                "description1": "...............................",
+                "description2": "...............................",
+                "price1": 23,
+                "price2": 90
+            },
+            "45": {
+                "name": "2024 Sauvignon Blanc, 14 Hands, Columbia Valley, WA, USA",
+                "description1": "...............................",
+                "description2": "...............................",
+                "price1": 10,
+                "price2": 40
+            },
+            "46": {
+                "name": "2020 Pinot Gris, 'Horse Heaven Hills Vineyard', Nine Hats, Columbia Valley, WA, USA",
+                "description1": "...............................",
+                "description2": "...............................",
+                "price1": 12,
+                "price2": 48
+            },
+            "47": {
+                "name": "2021 Riesling, 'Cold Creek Vineyard', Château Ste. Michelle, Columbia Valley, WA, USA",
+                "description1": "...............................",
+                "description2": "...............................",
+                "price1": 10,
+                "price2": 40
+            },
+            "48": {
+                "name": "2021 Chardonnay, MERF, Columbia Valley, WA, USA",
+                "description1": "...............................",
+                "description2": "...............................",
+                "price1": 14,
+                "price2": 56
+            },
+            "49": {
+                "name": "2020 Pinot Noir, Argyle Winery, Willamette Valley, OR, USA",
+                "description1": "...............................",
+                "description2": "...............................",
+                "price1": 16,
+                "price2": 64
+            },
+            "50": {
+                "name": "2020 Merlot, 'Expedition', Canoe Ridge Vineyards, Walla Walla, WA, USA",
+                "description1": "...............................",
+                "description2": "...............................",
+                "price1": 10,
+                "price2": 40
+            },
+            "51": {
+                "name": "2020 Syrah, 'The Pundit', Tenet Wines, Yakima Valley, WA, USA",
+                "description1": "...............................",
+                "description2": "...............................",
+                "price1": 13,
+                "price2": 52
+            },
+            "52": {
+                "name": "2020 Red Blend, Intrinsic Collection, CSM, Columbia Valley, WA, USA",
+                "description1": "...............................",
+                "description2": "...............................",
+                "price1": 16,
+                "price2": 64
+            },
+            "53": {
+                "name": "2020 Cabernet Sauvignon, 'Boomtown', Dusted Valley, Columbia Valley, WA, USA",
+                "description1": "...............................",
+                "description2": "...............................",
+                "price1": 12,
+                "price2": 48
+            },
+            "54": {
+                "name": "NV Fino Sherry, 'Jarana', Lustau, Jerez de la Frontera, Spain",
+                "price": 10
+            },
+            "55": {
+                "name": "NV Amontillado Sherry, 'Los Arcos', Jerez de la Frontera, Spain",
+                "price": 13
+            },
+            "56": {
+                "name": " Gentiane-Quina, Chambery, France",
+                "price": 10
+            },
+            "57": {
+                "name": " Gentian Apéritif, Massif Central, France",
+                "price": 13
+            },
+            "58": {
+                "name": " 'Cap Corse' Blanc, Corsica, France",
+                "price": 11
+            },
+            "59": {
+                "name": " Americano Bianco, Piedmont, Italy",
+                "price": 11
+            },
+            "60": {
+                "name": "'Dopo Teatro' Vermouth Amaro, Piedmont, Italy",
+                "price": 14
+            },
+            "61": {
+                "name": " Americano Rosa, Piedmont, Italy",
+                "price": 11
+            },
+            "62": {
+                "name": "NV Carpano Antica, Piedmont, Italy",
+                "price": 14
+            },
+            "63": {
+                "img": "/ImageEvents/1.jpg",
+                "name": "Pranks",
+                "description": "A discount for guests who made a check for the holiday sum (for example, 500 UAH or more).Participation in the drawing of beer kegs for a check for $1000",
+                "time": "00pm-00pm",
+                "day": "00.00.00"
+            },
+            "64": {
+                "img": "/ImageEvents/3.webp",
+                "name": "Happy Hours",
+                "description": "Beer is 20% off.",
+                "time": "20pm-22pm",
+                "day": "08.10.25"
+            },
+            "65": {
+                "img": "/ImageEvents/5.webp",
+                "name": "Combo set",
+                "description": "Create combo sets with beer and snacks at a special price.Butt:'Bavarian Evening': Pint of beer + sausages + pretzel for a fixed price.",
+                "time": "10pm-11pm",
+                "day": "10.10.10"
+            },
+            "66": {
+                "img": "/ImageEvents/4.webp",
+                "name": "Beer Day",
+                "description": "On Thursdays there is a 30% discount on IPA.Wine of dance beer for half the price.",
+                "time": "10pm-20pm",
+                "day": "10.10.10"
+            },
+            "67": {
+                "name": "Unveiling Seattle’s Vibrant Spirit",
+                "description": [
+                    "We are Champaign’s premier restaurant and bar, where flavor, connection, and culture come together.",
+                    "Located in the heart of the city, NOMAD is more than a dining destination—it’s a hub for unique experiences and unforgettable moments.",
+                    "Savor our signature wings, gourmet burgers, and vibrant tacos, all crafted to perfection.",
+                    "From lively Latin nights to exclusive events, we create an atmosphere where everyone feels welcome, energized, and inspired.",
+                    "At NOMAD Lounge, elegance meets excellence, and every visit is a journey to something extraordinary.",
+                    "Join us to celebrate, connect, and experience the best Champaign has to offer."
+                ],
+                "workDay": "Wednesday - Sunday",
+                "workDayTime": "4-11 pm",
+                "happyHourDay": "Wednesday-Thursday",
+                "happyHourTime": "4-6 pm"
+            }
+        }
+    },
+    "es": {
+        "categories": {
+            "Snacks": "Aperitivos",
+            "Small Plates": "Platos Pequeños",
+            "Large Plates": "Platos Grandes",
+            "Aperitivo": "Aperitivo",
+            "Vodka & Gin": "Vodka y Ginebra",
+            "Agave & Rum": "Agave y Ron",
+            "Whiskey & Brandy": "Whisky y Marca",
+            "Reserve Cocktails": "Reservar Cócteles",
+            "Large Format Cocktails": "Cócteles de Gran Formato",
+            "Free Spirited": "Espíritu Libre",
+            "Beer": "Cerveza",
+            "Wines by the Glass Sparkling": "Vinos por copa Espumosos",
+            "White": "Blanca",
+            "Red": "Roja",
+            "Sherry": "Jerez",
+            "Vermouth and Fortified": "Vermut y fortificada",
+            "Events": "Eventos",
+            "Tittle": "Ápice"
+        },
+        "items": {
+            "1": {
+                "name": "Nueces Mixtas",
+                "description": "romero, ajo, cítricos",
+                "price": 11
+            },
+            "2": {
+                "name": "Aceitunas Mixtas",
+                "description": "mezcla de nueces",
+                "price": 12
+            },
+            "3": {
+                "name": "Truffle Fries",
+                "description": "Papas fritas con trufa",
+                "price": 17
+            },
+            "4": {
+                "name": "Albóndigas De Cordero",
+                "description": "aceite de chile, ensalada de hierbas",
+                "price": 16
+            },
+            "5": {
+                "name": "Junta de quesos del estado de Washington",
+                "description": "cerezas secas, compota de manzana, galletas saladas",
+                "price": 19
+            },
+            "6": {
+                "name": "Tabla de embutidos",
+                "description": "selecciones de la casa, croistini, almendras marcona",
+                "price": 19
+            },
+            "7": {
+                "name": "Higo y jamón serrano",
+                "description": "marscapone, miel local",
+                "price": 16
+            },
+            "8": {
+                "name": "Alitas de pollo tailandesas",
+                "description": "romero, ajo, cítricos",
+                "price": 18
+            },
+            "9": {
+                "name": "Hummus de zanahoria asada",
+                "description": "pita tibia, tomate asado, pepino marinado",
+                "price": 17
+            },
+            "10": {
+                "name": "Ensalada César Clásica de la Casa",
+                "description": "corazones de lechuga romana, picatostes de hierbas, parmesano rallado, aderezo césar tradicional",
+                "price": 17
+            },
+            "11": {
+                "name": "Hamburguesa de asador",
+                "description": "lechuga, queso cheddar, salsa especial de la casa, pan brioche servido con aros de cebolla rebozados con cerveza",
+                "price": 25
+            },
+            "12": {
+                "name": "Fletán rebozado con cerveza IPA y patatas fritas",
+                "description": "papas fritas, salsa tártara",
+                "price": 34
+            },
+            "13": {
+                "name": "Tacos De Pescado",
+                "description": "pescado de roca a la parrilla, tortilla de harina, mayonesa de chipotle, ensalada de mango, cebolla morada encurtida",
+                "price": 28
+            },
+            "14": {
+                "name": "Spritz de adelfa",
+                "description": "Cappelletti Aperitivo, Bonal, Cocchi Americano, vino espumoso, bitter de pomelo. Servido sobre hielo en una copa de vino, adornado con pomelo.",
+                "price": 12
+            },
+            "15": {
+                "name": "vestido de fiesta",
+                "description": "Cap Corse Blanc, Singani 63, pomelo, amargo de yuzu, agua mineral con gas. Servido alto con tomillo y limón",
+                "price": 13
+            },
+            "16": {
+                "name": "Temporada robada",
+                "description": "Jerez Amontillado, Cynar, Cocchi Americano, Amargo de Naranja de Sevilla. Servido con una rodaja de limón",
+                "price": 13
+            },
+            "17": {
+                "name": "Saltar un ritmo",
+                "description": "Ginebra, Aquavit, Amaricano Bianca, miel, limón, amargo de lavanda. Servido con un toque de pomelo",
+                "price": 15
+            },
+            "18": {
+                "name": "Pasión de viajar",
+                "description": "Vodka, Cocchi Americano, arándano, limón. Servido con hielo, arándanos y tomillo.",
+                "price": 16
+            },
+            "19": {
+                "name": "Onda sinusoidal",
+                "description": "Ginebra, Fino Sherry, Cap Corse Blanc, Casoni Heritage, amargo de apio. Servido con una aceituna",
+                "price": 16
+            },
+            "20": {
+                "name": "Cuarto Verde",
+                "description": "Mezcal, Dolin Génépy le Chamois, limón. Servido con hielo y menta",
+                "price": 17
+            },
+            "21": {
+                "name": "Empújalo",
+                "description": "Mezcal, Tequila, Amaro Lucano, tintura de aguardiente, sirope demerara. Servido sobre una roca grande con rodaja de limón y naranja.",
+                "price": 17
+            },
+            "22": {
+                "name": "Bingo de manta de playa",
+                "description": "Ron Plantation Pineapple, Meletti 1870, lima, miel. Servido con hielo con pomelo y menta",
+                "price": 15
+            },
+            "23": {
+                "name": "Sin suerte",
+                "description": "Bourbon, Amaricano, limón, cordial de naranja. Servido con hielo y con una rodaja de limón.",
+                "price": 16
+            },
+            "24": {
+                "name": "Asunto de corbata negra",
+                "description": "Coñac, Génépy le Chamois, limón, cordial de naranja, vino espumoso. Servido con una rodaja de limón",
+                "price": 21
+            },
+            "25": {
+                "name": "Ojos Privados",
+                "description": "Centeno, Amaro Amorino, Ramazzotti, vermut dulce, amargo de pomelo. Servido con un toque de pomelo",
+                "price": 17
+            },
+            "26": {
+                "name": "Fuera de Horas",
+                "description": "Escoceses mezclados y turbados, Salers, Meletti, amargo de limón negro. Servido sobre una gran roca con una cereza.",
+                "price": 19
+            },
+            "27": {
+                "name": "Reserva Bijou",
+                "description": "Ginebra Monkey 47, Chartreuse verde, Cocchi Dopo Teatro, amargo de naranja de Sevilla. Servido con una rodaja de naranja flameada y una cereza",
+                "price": 32
+            },
+            "28": {
+                "name": "Reservar a la antigua usanza",
+                "description": "WhistlePig 12 Year Rye, Amaro Amorino Riserva, amargo aromático, jarabe demerara. Servido sobre una roca grande con un toque de naranja y una cereza.",
+                "price": 47
+            },
+            "29": {
+                "name": "Juego de pies elegante",
+                "description": "Ginebra, Cap Corse Blanc, Avèze, amargo de yuzu. Servido en vasos bajo con hielo, adornado con rodajas de limón y aceitunas.",
+                "price": 215,
+                "ml": 750
+            },
+            "30": {
+                "name": "Verano y Humo",
+                "description": "Mezcal, Tequila, Cocchi Rosa, verjus, Dolin Génépy le Chamois, amargo de pomelo. Se sirve en vasos bajo con hielo y se adorna con pomelo",
+                "price": 225,
+                "ml": 750
+            },
+            "31": {
+                "name": "Doctor Manhattan",
+                "description": "Bourbon, Amaro Lucano, Bonal, amargo de naranja. Servido con vasos fríos y decorado con rodaja de limón.",
+                "price": 255,
+                "ml": 750
+            },
+            "32": {
+                "name": "Sigue Volando",
+                "description": "Wilderton Aperitivo, verjus, cordial de naranja, gaseosa. Servido con hielo en una copa de vino.",
+                "price": 13
+            },
+            "33": {
+                "name": "Hora de Nadar",
+                "description": "Wilderton Lustre, pomelo, limón, miel, agua mineral con gas. Servido alto con pomelo y menta",
+                "price": 13
+            },
+            "34": {
+                "name": "Toda la Noche",
+                "description": "Wilderton Aperitivo, Wilderton Lustre, Pathfinder. Servido sobre una roca grande con naranja.",
+                "price": 14
+            },
+            "35": {
+                "name": "Rainier Lager Tallboy, Washington, EE.UU.",
+                "description": "Lata (16oz)",
+                "price": 8
+            },
+            "36": {
+                "name": "Pike Brewing Pils 'Post Alley', Seattle, WA",
+                "description": "",
+                "price": 7
+            },
+            "37": {
+                "name": "Aslan Brewing 'Monarch' West Coast IPA, Bellingham, WA",
+                "description": "",
+                "price": 7
+            },
+            "38": {
+                "name": "Bale Breaker Brewing 'Hazy L' Hazy IPA, Yakima, WA",
+                "description": "",
+                "price": 7
+            },
+            "39": {
+                "name": "Ghostfish Brewing 'Vanishing Point' Pale Ale, Seattle WA",
+                "description": "",
+                "price": 8
+            },
+            "40": {
+                "name": "Rotación Local Estacional",
+                "description": "Lata (16oz)",
+                "price": 8
+            },
+            "41": {
+                "name": "Pregunte por nuestras cervezas de barril rotativas de temporada",
+                "description": "",
+                "price": 8
+            },
+            "42": {
+                "name": "NV Brut, Blanc de Blancs, Treveri Cellars, Yakima Valley, WA, EE. UU.",
+                "description1": "...............................",
+                "description2": "...............................",
+                "price1": 14,
+                "price2": 56
+            },
+            "43": {
+                "name": "NV Brut Rosé, 'Bubbles', A to Z Wineworks, Willamette Valley, Oregón, EE. UU.",
+                "description1": "...............................",
+                "description2": "...............................",
+                "price1": 12,
+                "price2": 48
+            },
+            "44": {
+                "name": "NV Brut, 'Cordon Rouge', GH Mumm, Reims, Champaña, Francia",
+                "description1": "...............................",
+                "description2": "...............................",
+                "price1": 23,
+                "price2": 90
+            },
+            "45": {
+                "name": "2024 Sauvignon Blanc, 14 manos, Columbia Valley, WA, EE. UU.",
+                "description1": "...............................",
+                "description2": "...............................",
+                "price1": 10,
+                "price2": 40
+            },
+            "46": {
+                "name": "2020 Pinot Gris, 'Horse Heaven Hills Vineyard', Nine Hats, Columbia Valley, WA, EE. UU.",
+                "description1": "...............................",
+                "description2": "...............................",
+                "price1": 12,
+                "price2": 48
+            },
+            "47": {
+                "name": "2021 Riesling, 'Cold Creek Vineyard', Château Ste. Michelle, Valle de Columbia, WA, EE. UU.",
+                "description1": "...............................",
+                "description2": "...............................",
+                "price1": 10,
+                "price2": 40
+            },
+            "48": {
+                "name": "2021 Chardonnay, MERF, Columbia Valley, WA, EE. UU.",
+                "description1": "...............................",
+                "description2": "...............................",
+                "price1": 14,
+                "price2": 56
+            },
+            "49": {
+                "name": "2020 Pinot Noir, Bodega Argyle, Willamette Valley, Oregón, EE. UU.",
+                "description1": "...............................",
+                "description2": "...............................",
+                "price1": 16,
+                "price2": 64
+            },
+            "50": {
+                "name": "2020 Merlot, 'Expedition', Canoe Ridge Vineyards, Walla Walla, WA, EE. UU.",
+                "description1": "...............................",
+                "description2": "...............................",
+                "price1": 10,
+                "price2": 40
+            },
+            "51": {
+                "name": "2020 Syrah, 'The Pundit', Tenet Wines, Yakima Valley, WA, EE. UU.",
+                "description1": "...............................",
+                "description2": "...............................",
+                "price1": 13,
+                "price2": 52
+            },
+            "52": {
+                "name": "2020 Red Blend, Colección Intrinsic, CSM, Columbia Valley, WA, EE. UU.",
+                "description1": "...............................",
+                "description2": "...............................",
+                "price1": 16,
+                "price2": 64
+            },
+            "53": {
+                "name": "2020 Cabernet Sauvignon, 'Boomtown', Dusted Valley, Columbia Valley, WA, EE. UU.",
+                "description1": "...............................",
+                "description2": "...............................",
+                "price1": 12,
+                "price2": 48
+            },
+            "54": {
+                "name": "NV Fino Sherry, 'Jarana', Lustau, Jerez de la Frontera, España",
+                "price": 10
+            },
+            "55": {
+                "name": "NV Amontillado Sherry, 'Los Arcos', Jerez de la Frontera, España",
+                "price": 13
+            },
+            "56": {
+                "name": "NV Bonal Gentiane-Quina, Chambéry, Francia",
+                "price": 10
+            },
+            "57": {
+                "name": "NV Salers Apéritif de genciana, Macizo Central, Francia",
+                "price": 13
+            },
+            "58": {
+                "name": "NV Mattei 'Cap Corse' Blanc, Córcega, Francia",
+                "price": 11
+            },
+            "59": {
+                "name": "NV Cocchi Americano Bianco, Piamonte, Italia",
+                "price": 11
+            },
+            "60": {
+                "name": "NV Cocchi 'Dopo Teatro' Vermut Amaro, Piamonte, Italia",
+                "price": 14
+            },
+            "61": {
+                "name": "NV Cocchi Americano Rosa, Piamonte, Italia",
+                "price": 11
+            },
+            "62": {
+                "name": "NV Carpano Antica, Piamonte, Italia",
+                "price": 14
+            },
+            "63": {
+                "img": "/ImageEvents/1.jpg",
+                "name": "Bromas",
+                "description": "Descuento para los huéspedes que hayan emitido un cheque por el importe de las vacaciones (por ejemplo, 500 grivnas o más). Participación en el sorteo de barriles de cerveza para un cheque por $1000",
+                "time": "00pm-00pm",
+                "day": "00.00.00"
+            },
+            "64": {
+                "img": "/ImageEvents/3.webp",
+                "name": "Horas Felices",
+                "description": "La cerveza tiene un 20% de descuento.",
+                "time": "20pm-22pm",
+                "day": "08.10.25"
+            },
+            "65": {
+                "img": "/ImageEvents/5.webp",
+                "name": "Conjunto Combinado",
+                "description": "Crea conjuntos combinados con cerveza y snacks a un precio especial. Butt: 'Noche bávara': pinta de cerveza + salchichas + pretzel por un precio fijo.",
+                "time": "10pm-11pm",
+                "day": "10.10.10"
+            },
+            "66": {
+                "img": "/ImageEvents/4.webp",
+                "name": "Dia de la Cerveza",
+                "description": "Los jueves hay un 30% de descuento en IPA. Vino o cerveza de baile a mitad de precio.",
+                "time": "10pm-20pm",
+                "day": "10.10.10"
+            },
+            "67": {
+                "name": "Revelando el espíritu vibrante de Seattle",
+                "description": [
+                    "Somos el principal restaurante y bar de Champaign, donde el sabor, la conexión y la cultura se unen",
+                    "Ubicado en el corazón de la ciudad, NOMAD es más que un destino gastronómico: es un centro para experiencias únicas y momentos inolvidables",
+                    "Saborea nuestras exclusivas alitas, hamburguesas gourmet y vibrantes tacos, todos elaborados a la perfección",
+                    "Desde animadas noches latinas hasta eventos exclusivos, creamos una atmósfera donde todos se sienten bienvenidos, llenos de energía e inspirados",
+                    "En NOMAD Lounge, la elegancia se une a la excelencia y cada visita es un viaje hacia algo extraordinario.",
+                    "Únase a nosotros para celebrar, conectarse y experimentar lo mejor que Champaign tiene para ofrecer."
+                ],
+                "workDay": "Miércoles - Domingo",
+                "workDayTime": "4-11 pm",
+                "happyHourDay": "Miércoles-Jueves",
+                "happyHourTime": "4-6 pm"
+            }
+        }
+    }
+}

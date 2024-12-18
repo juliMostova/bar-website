@@ -1,6 +1,9 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import {useTranslation } from 'react-i18next';
+import LanguagesSwitcher from "./components/LanguagesSwitcher";
+
 
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -14,6 +17,13 @@ function App() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isModal, setIsModal] = useState(false);
   const headerRef = useRef(null);
+  const {i18n}=useTranslation();
+
+
+  useEffect(()=>{
+    const lang =  localStorage.getItem('i18nextLng')|| 'en';
+i18n.changeLanguage(lang);
+  },[i18n]);
 
   useEffect(() => {
     console.log("Adding scroll listener"); 
@@ -41,6 +51,7 @@ function App() {
 
   return (
     <div className="app">
+     
       <Header isScrolled={isScrolled} ref={headerRef} />
       <main className="main">  
         <Routes>

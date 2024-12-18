@@ -91,7 +91,7 @@ position: relative;
   gap: 15px;
 }
 .menu{
-  display: block;
+  /* display: block; */
 }
   .HomeLogo {
     width: 90px;

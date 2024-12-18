@@ -1,24 +1,21 @@
-import i18n from 'i18next';
+import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
-import en from './en.json';
-import es from './es.json';
+import enJSON from './Translation.json';
 
 
-// Ініціалізація мов
-i18n
-.use(LanguageDetector)// Автоматичне визначення мови
-.use(initReactI18next)// Інтеграція з React
+i18next
+.use(initReactI18next)
 .init({
   resources: {
-   en:{translation:en},
-   es:{translation:es},
+    ...enJSON
   },
-  lng: "en", // Мова за замовчуванням
-  fallbackLng: "en", // Якщо мова не знайдена, буде використовуватись ця
+  lng: localStorage.getItem('i18nextLng') || 'en',
+  fallbackLng: 'en',
   interpolation: {
-    escapeValue: false, // React уже захищає від XSS
-  },
+    escapeValue: false,
+ },
+ keySeparator: '.',
 });
 
-export default i18n;
+export default i18next;
+
