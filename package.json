@@ -2,7 +2,7 @@
   "name": "barsite",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://julimostova.github.io/juliMostova/bar-website/",
+  "homepage":"https://julimostova.github.io/bar-website/",
   "dependencies": {
     "@emotion/react": "^11.13.5",
     "@emotion/styled": "^11.13.5",
