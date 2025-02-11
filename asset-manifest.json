@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bar-website/static/css/main.eb0fccfd.css",
-    "main.js": "/bar-website/static/js/main.e2b524b3.js",
+    "main.css": "/bar-website/static/css/main.353ebc27.css",
+    "main.js": "/bar-website/static/js/main.afa67006.js",
     "static/media/reservation.jpg": "/bar-website/static/media/reservation.c877483e1650f38d0f0e.jpg",
     "static/media/wine1.jpg": "/bar-website/static/media/wine1.f97458759c45b45585e8.jpg",
     "static/media/menu.jpg": "/bar-website/static/media/menu.912eccd21096c7a65a4e.jpg",
@@ -9,11 +9,11 @@
     "static/media/mainPhoto.jpg": "/bar-website/static/media/mainPhoto.de36c847a8f1e8050497.jpg",
     "static/media/Logo.jpg": "/bar-website/static/media/Logo.385bc101e2f1159f79ec.jpg",
     "index.html": "/bar-website/index.html",
-    "main.eb0fccfd.css.map": "/bar-website/static/css/main.eb0fccfd.css.map",
-    "main.e2b524b3.js.map": "/bar-website/static/js/main.e2b524b3.js.map"
+    "main.353ebc27.css.map": "/bar-website/static/css/main.353ebc27.css.map",
+    "main.afa67006.js.map": "/bar-website/static/js/main.afa67006.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb0fccfd.css",
-    "static/js/main.e2b524b3.js"
+    "static/css/main.353ebc27.css",
+    "static/js/main.afa67006.js"
   ]
 }
