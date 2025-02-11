@@ -30,7 +30,7 @@
   gap: 20px;
 }
 
-.item {
+.item_Event {
   width: 200px; 
   height: auto;
   display: flex;
@@ -107,7 +107,7 @@
     gap: 15px;
   }
 
-  .item {
+  .item_Event {
     width: 90%; 
     height: auto;
   }

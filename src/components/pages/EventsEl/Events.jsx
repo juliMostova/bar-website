@@ -44,7 +44,7 @@ function Events() {
           
 
                 return (
-                  <div key={ind} className="item">
+                  <div key={ind} className="item_Event">
                     <div className="image">
                       <img
                         src={process.env.PUBLIC_URL + imagePath}

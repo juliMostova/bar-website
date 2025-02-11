@@ -31,6 +31,7 @@ function DrinkMenu() {
     // getDrinkMenu();
 
     // return () => setMenuDrink([]);
+ console.log('menuDrink',menuData.menuDrink)
     setMenuDrink(menuData.menuDrink)
   }, []);
 
