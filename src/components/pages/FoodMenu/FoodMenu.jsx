@@ -3,29 +3,35 @@ import "./FoodMenuStyle.css";
 import menuPhoto from "./../../../assets/images/menu.jpg";
 import { useTranslation } from "react-i18next";
 
+import menuDataMenu from './../../../serverData/menuData.json';
+import i18n from './../../../serverData/i18n/i18n';
+import translation from './../../../serverData/Translation.json';
 
 function FoodMenu() {
   const [menuData, setMenuData] = useState([]);
   const { t } = useTranslation()
 
   useEffect(() => {
+    //закоментувала поки данні не на сервері
 
-    const getApiMenu = async () => {
-      try {
-        const response = await fetch('http://localhost:3001/menuFood');
 
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
-        console.log('foodMenu',data)
-        setMenuData(data);
-      } catch (error) {
-        console.log("Error fetching menu:", error);
-      }
-    };
-    getApiMenu();
-  return () =>setMenuData([]);
+  //   const getApiMenu = async () => {
+  //     try {
+  //       const response = await fetch('http://localhost:3001/menuFood');
+
+  //       if (!response.ok) {
+  //         throw new Error(`HTTP error! status: ${response.status}`);
+  //       }
+  //       const data = await response.json();
+  //       console.log('foodMenu',data)
+  //       setMenuData(data);
+  //     } catch (error) {
+  //       console.log("Error fetching menu:", error);
+  //     }
+  //   };
+  //   getApiMenu();
+  // return () =>setMenuData([]);
+  setMenuData(menuDataMenu.menuFood)
   }, []);
 
   return (

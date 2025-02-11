@@ -3,28 +3,35 @@ import "./DrinkMenuStyle.css";
 import shotsPhoto1 from "./../../../assets/images/wine1.jpg";
 import { useTranslation } from "react-i18next";
 
+import menuData from './../../../serverData/menuData.json';
+import i18n from './../../../serverData/i18n/i18n';
+import  translation from './../../../serverData/Translation.json';
+
 function DrinkMenu() {
   const [menuDrink, setMenuDrink] = useState([]);
   const { t } = useTranslation();
 
   useEffect(() => {
-    const getDrinkMenu = async () => {
-      try {
-        const response = await fetch("http://localhost:3001/menuDrink");
+     //закоментувала поки данні не на сервері
 
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
-        setMenuDrink(data);
-      } catch (error) {
-        console.log("Error:", error);
-      }
-    };
+    // const getDrinkMenu = async () => {
+    //   try {
+    //     const response = await fetch("http://localhost:3001/menuDrink");
 
-    getDrinkMenu();
+    //     if (!response.ok) {
+    //       throw new Error(`HTTP error! status: ${response.status}`);
+    //     }
+    //     const data = await response.json();
+    //     setMenuDrink(data);
+    //   } catch (error) {
+    //     console.log("Error:", error);
+    //   }
+    // };
 
-    return () => setMenuDrink([]);
+    // getDrinkMenu();
+
+    // return () => setMenuDrink([]);
+    setMenuDrink(menuData.menuDrink)
   }, []);
 
   const filterPrise = ["Wines by the Glass Sparkling", "White", "Red"];

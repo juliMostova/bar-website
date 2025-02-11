@@ -26,7 +26,7 @@
     width: 300px;
     height: 100%;
     /* background: #201f1f;  */
-    background-color: black;
+    background-color: black; 
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
@@ -96,10 +96,11 @@ position: relative;
   /* display: block; */
 }
   .HomeLogo {
-    width: 90px;
+    width: 90px; 
     cursor: pointer;
     z-index: 1100;
     background-size: cover;
+
     /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
   }
   .callIcon img {

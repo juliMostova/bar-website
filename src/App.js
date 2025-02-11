@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import {useTranslation } from 'react-i18next';
-import LanguagesSwitcher from "./components/LanguagesSwitcher";
+//import LanguagesSwitcher from "./components/LanguagesSwitcher";
 
 
 import Header from "./components/Header/Header";
@@ -12,6 +12,9 @@ import FoodMenu from "./components/pages/FoodMenu/FoodMenu";
 import DrinkMenu from "./components/pages/DrinkMenu/DrinkMenu";
 import Events from "./components/pages/EventsEl/Events";
 import Contact from "./components/pages/ContactUs/ContactUs";
+
+
+
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,7 +31,7 @@ i18n.changeLanguage(lang);
   useEffect(() => {
     console.log("Adding scroll listener"); 
     const handleScroll = () => {
-      console.log("Scroll event triggered"); // Це має відобразитися при прокрутці
+      console.log("Scroll event triggered");
       if (headerRef.current) {
         const scrolled = window.scrollY > 0;
         console.log("Scrolled:", scrolled);
@@ -53,7 +56,7 @@ i18n.changeLanguage(lang);
     <div className="app">
      
       <Header isScrolled={isScrolled} ref={headerRef} />
-      <main className="main">  
+      <main className='main'>
         <Routes>
           <Route
             path="/"
@@ -66,6 +69,7 @@ i18n.changeLanguage(lang);
           <Route path="/drink-menu" element={<DrinkMenu />} />
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<Contact />} />
+
         </Routes>
       </main>
       <Footer />

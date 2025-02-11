@@ -1,3 +1,5 @@
+
+
 {
     "en": {
         "categories": {
@@ -351,7 +353,7 @@
                 "price": 14
             },
             "63": {
-                "img": "/ImageEvents/1.jpg",
+                "img": "/ImageEvents/sale.jpg",
                 "name": "Pranks",
                 "description": "A discount for guests who made a check for the holiday sum (for example, 500 UAH or more).Participation in the drawing of beer kegs for a check for $1000",
                 "time": "00pm-00pm",
@@ -365,18 +367,18 @@
                 "day": "08.10.25"
             },
             "65": {
-                "img": "/ImageEvents/5.webp",
+                "img": "/ImageEvents/8.jpg",
                 "name": "Combo set",
                 "description": "Create combo sets with beer and snacks at a special price.Butt:'Bavarian Evening': Pint of beer + sausages + pretzel for a fixed price.",
                 "time": "10pm-11pm",
-                "day": "10.10.10"
+                "day": "10.08.25"
             },
             "66": {
-                "img": "/ImageEvents/4.webp",
+                "img": "/ImageEvents/11.jpg",
                 "name": "Beer Day",
                 "description": "On Thursdays there is a 30% discount on IPA.Wine of dance beer for half the price.",
                 "time": "10pm-20pm",
-                "day": "10.10.10"
+                "day": "10.10.25"
             },
             "67": {
                 "name": "Unveiling Seattle’s Vibrant Spirit",

@@ -1,6 +1,7 @@
 import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import enJSON from './Translation.json';
+//import enJSON from './Translation.json';
+import enJSON from './../Translation.json'
 
 
 i18next
@@ -18,4 +19,6 @@ i18next
 });
 
 export default i18next;
+
+
 
